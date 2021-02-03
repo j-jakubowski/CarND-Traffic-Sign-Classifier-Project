@@ -81,7 +81,7 @@ My final model consisted of the following layers:
 | Fully connected		| outputs 43  									|
 
  
-To train the model, I used hyperparameter values in used in LeNet. I've tried to tweak them a bit but it seemed they already have been in the sweet spot. 
+To train the mode I used the same rate, and batch size as used used in LeNet. I've tried to tweak them a bit but it seemed they already have been in the sweet spot. The only parameter I changed was the number of epochs (increased to 30). Addtionally training is interrupted if validation reaches level 0.96 before 30 epochs.
 
 My final model results were:
 * training set accuracy of 0.999
