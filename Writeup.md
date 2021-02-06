@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [photo3]: ./Photos/20210110_125839.jpg "Traffic Sign 3"
 [photo4]: ./Photos/20210110_125910.jpg "Traffic Sign 4"
 [photo5]: ./Photos/20210110_130157.jpg "Traffic Sign 5"
-[model]: ./Photos/Model.png "Model"
+[model]: ./Photos/Model.PNG "Model"
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 ---
