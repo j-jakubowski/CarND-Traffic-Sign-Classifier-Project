@@ -102,18 +102,29 @@ Some of these signs are not new, they have dents and some stickers on them. I've
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					|  Probability | 
-|:---------------------:|:---------------------------------------------:|:------------:|
-| 30km/h1       		| 30km/h   								     	|      99% 	   |
-| 30km/h2       		| 80km/h    									|    87,2%     |
-| Turn right1  			| Turn right									|     100% 	   |
-| Turn right2  			| Turn right									|     100% 	   |
-| Priority road1		| Priority road									|     100% 	   |
-| Priority road2  		| Priority road									|     100% 	   |
-| Yield1      		    | Yield							 				|     100% 	   |
-| Yield2      		    | Yield							 				|     100% 	   |
-| Road works1			| Road works        							|     100% 	   |
-| Road works2			| Bicycles crossing      						|      99% 	   |
+|                       |                                               |       Top       |
+| Image			        |     Prediction	        					|  Probabilities  |
+|:---------------------:|:---------------------------------------------:|:---------------:|
+| 30km/h1       		| 30km/h   								     	|       99% 	  |   
+| 30km/h2       		| 80km/h    									| 		87,2%     |   
+| Turn right1  			| Turn right									| 		100% 	  |  
+| Turn right2  			| Turn right									|		100% 	  |  
+| Priority road1		| Priority road									|		100% 	  |  
+| Priority road2  		| Priority road									|		100% 	  |  
+| Yield1      		    | Yield							 				|		100% 	  |  
+| Yield2      		    | Yield							 				|		100% 	  |  
+| Road works1			| Road works        							| 		100% 	  |  
+| Road works2			| Bicycles crossing      						|		99% 	  |  
+
+And top 5 probabilities for every image: (omitted labels for probabilities lower than 1e-20)
+
+| Actual Image / Top 5 predictions  | 30km/h                         | 30km/h                               | Turn right 1      | Turn right 2    | Priority Road 1     | Priority Road 2    | Yield 1     | Yield 2     | Road Works1     | Road Works2                       |
+|-----------------------------------|--------------------------------|--------------------------------------|-------------------|-----------------|---------------------|--------------------|-------------|-------------|-----------------|-----------------------------------|
+|                                   | 30km/h ( 0.99999)              | 80km/h (0.872)                       | Turn right (1.00) | Turn right(1.0) | Priority Road (1.0) | Priority Road(1.0) | Yield (1.0) | Yield (1.0) | Road Works(1.0) | Bicycle crossing (0.99999)        |
+|                                   | 50km/h (4e-07)                 | 60km/h(0.127)                        |                   |                 |                     |                    |             |             |                 | Road narrows on the right (7e-08) |
+|                                   | Wild animals crossing  (8e-11) | Roundabout (1e-06)                   |                   |                 |                     |                    |             |             |                 | Double curve (6e-16)              |
+|                                   | General caution(3e-13)         | Vehicle over 3.5t prohibited (3e-07) |                   |                 |                     |                    |             |             |                 | Traffic signals (3e-17)           |
+|                                   | Bicycle crossing(2e-13)        | 50km/h (4e-08)                       |                   |                 |                     |                    |             |             |                 | Road Works (4e-18)                |
 
 
 The model was able to correctly guess 8 of the 10 traffic signs, which gives an accuracy of 80%. Generally the model was certain of the classification, even when it misclassified signs. 
