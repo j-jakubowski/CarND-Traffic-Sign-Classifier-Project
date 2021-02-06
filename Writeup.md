@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [photo3]: ./Photos/20210110_125839.jpg "Traffic Sign 3"
 [photo4]: ./Photos/20210110_125910.jpg "Traffic Sign 4"
 [photo5]: ./Photos/20210110_130157.jpg "Traffic Sign 5"
-
+[model]: ./Photos/Model.png "Model"
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 ---
@@ -80,6 +80,8 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Fully connected		| outputs 43  									|
 
+![Model][Model]
+
  
 To train the mode I used the same rate, and batch size as used used in LeNet. I've tried to tweak them a bit but it seemed they already have been in the sweet spot. The only parameter I changed was the number of epochs (increased to 30). Addtionally training is interrupted if validation reaches level 0.96 before 30 epochs.
 
@@ -118,9 +120,9 @@ Here are the results of the prediction:
 
 And top 5 probabilities for every image: (omitted labels for probabilities lower than 1e-20)
 
-| Actual Image / Top 5 predictions  | 30km/h                         | 30km/h                               | Turn right 1      | Turn right 2    | Priority Road 1     | Priority Road 2    | Yield 1     | Yield 2     | Road Works1     | Road Works2                       |
+| Actual Image / Top 5 predictions  | 30km/h 1                       | 30km/h 2                             | Turn right 1      | Turn right 2    | Priority Road 1     | Priority Road 2    | Yield 1     | Yield 2     | Road Works1     | Road Works2                       |
 |-----------------------------------|--------------------------------|--------------------------------------|-------------------|-----------------|---------------------|--------------------|-------------|-------------|-----------------|-----------------------------------|
-|                                   | 30km/h ( 0.99999)              | 80km/h (0.872)                       | Turn right (1.00) | Turn right(1.0) | Priority Road (1.0) | Priority Road(1.0) | Yield (1.0) | Yield (1.0) | Road Works(1.0) | Bicycle crossing (0.99999)        |
+|                                   | 30km/h (0.99999)              | 80km/h (0.872)                       | Turn right (1.00) | Turn right(1.0) | Priority Road (1.0) | Priority Road(1.0) | Yield (1.0) | Yield (1.0) | Road Works(1.0) | Bicycle crossing (0.99999)        |
 |                                   | 50km/h (4e-07)                 | 60km/h(0.127)                        |                   |                 |                     |                    |             |             |                 | Road narrows on the right (7e-08) |
 |                                   | Wild animals crossing  (8e-11) | Roundabout (1e-06)                   |                   |                 |                     |                    |             |             |                 | Double curve (6e-16)              |
 |                                   | General caution(3e-13)         | Vehicle over 3.5t prohibited (3e-07) |                   |                 |                     |                    |             |             |                 | Traffic signals (3e-17)           |
