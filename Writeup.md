@@ -89,6 +89,9 @@ My final model results were:
 * training set accuracy of 0.999
 * validation set accuracy of 0.964
 * test set accuracy of 0.938
+
+
+Reducing batch size and learning rate in order to regularize the model actually didn't improve the validation accuracy. In 60 batches the model couldn't reach more than 96% accuracy on validation set.
  
 
 ### Testing how the Model works on New Images
