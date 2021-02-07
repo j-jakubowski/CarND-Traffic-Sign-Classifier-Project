@@ -92,6 +92,8 @@ My final model results were:
 
 
 Reducing batch size and learning rate in order to regularize the model actually didn't improve the validation accuracy. In 60 batches the model couldn't reach more than 96% accuracy on validation set.
+
+I've also tried using dropout layers between convolution layers, but it didn't improve the overall accuracy.
  
 
 ### Testing how the Model works on New Images
